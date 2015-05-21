@@ -1,6 +1,16 @@
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
-
+@mixin buttonStyle(){
+  border-radius: 3px;
+  height: 38px;
+  background-color: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+@mixin bottomBorder(){
+  border-bottom: 1px solid #E1E3DF;
+}
 
 body{
   color: #222;
@@ -15,6 +25,13 @@ a{
    color: #0192B5;
   font-size: 14px;
 
+}
+h5{
+  color: #555555;
+  font-size: 13px;
+}
+.content a:hover{
+  text-decoration: underline;
 }
 .topnav{
   height: 80px;
@@ -161,8 +178,203 @@ a{
 }
 .left{
   @include span-columns(4);
-  background-color: #FFFFFF;
+    width: 25.76157%;
 }
 .right{
 @include span-columns(8);
+}
+.panel-top{
+  background-color: #FFFFFF;
+  border: 1px solid #E1E3DF;
+  a{
+    text-decoration: none;
+      padding-left: 10px;
+  }
+  ul{
+    list-style: none;
+    margin-bottom: 24px;
+    padding: 12px;
+  }
+  li{
+    padding-bottom: 6px;
+  }
+}
+.list-title{
+  margin-left: -10px;
+  a{
+    color: #555555;
+    text-decoration: none;
+    font-weight: bolder;
+    padding-left: -6px;
+  }
+}
+.refine{
+  margin-bottom: 7px;
+  margin-top: 22px;
+}
+.panel-bottom{
+  background-color: #FFFFFF;
+  border: 1px solid #E1E3DF;
+}
+.itemtype{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+@include bottomBorder;
+
+  h5{
+    margin-bottom: 7px;
+    margin-top: 13px;
+  }
+  label{
+    display: block;
+    margin-bottom: 6px;
+  }
+  a{
+    text-decoration: none;
+    margin-left: 5px;
+  }
+}
+
+.type{
+  a{
+    color: #555555;
+    font-weight: bolder;
+  }
+}
+.price{
+  position: relative;
+   margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+  @include bottomBorder;
+  h5{
+    margin-bottom: 0;
+  }
+  input{
+    width: 100%;
+    padding-left: 20px;
+    height: 38px;
+    font-size: 14px;
+    @include buttonStyle;
+  }
+  button{
+  @include buttonStyle;
+  width: 34px;
+  position: absolute;
+  margin-left: 6px;
+  padding: 0
+  }
+}
+.lowprices{
+  display: inline-block;
+  width: 35%;
+  position: relative;
+ span{
+  position: absolute;
+  top: 25%;
+  left: 3px;
+  font-size: 13px;
+  }
+
+}
+.highprices{
+  display: inline-block;
+  width: 35%;
+  position: relative;
+  margin-left: 15px;
+  span{
+    position: absolute;
+    top: 25%;
+    left: 3px;
+    font-size: 13px;
+  }
+
+}
+.to{
+  position: absolute;
+  left: 82px;
+  top: 27px;
+  font-size: 13px;
+}
+.color-filter{
+  margin-left: 10px;
+  margin-right: 10px;
+  h5{
+    margin-bottom: 0;
+  }
+  ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 8px;
+  }
+  li{
+    display: inline-block;
+
+  }
+  @include bottomBorder;
+}
+.swatch{
+    display: inline-block;
+    margin-right: 0;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    height: 22px;
+    width: 22px;
+    padding: 1px;
+    overflow: hidden;
+
+}
+.ordering-options{
+  margin-left: 10px;
+  margin-right: 10px;
+  @include bottomBorder;
+  h5{
+    margin-bottom: 5px;
+  }
+  label{
+  display: block;
+  margin-bottom: 5px;
+  }
+  a{
+    text-decoration: none;
+  }
+}
+.shop{
+  margin-left: 10px;
+  margin-right: 10px;
+  @include bottomBorder;
+  h5{
+    margin-bottom: 5px;
+  }
+  label{
+    display: block;
+    margin-bottom: 5px;
+  }
+  a{
+    text-decoration: none;
+  }
+
+}
+.dropdown{
+  display: block;
+  float: left;
+  padding-left: 7px;
+  width: 207px;
+  height: 34px;
+  @include buttonStyle;
+  a{
+    padding: 8px;
+    border-radius: 3px;
+    color: #666;
+    display: block;
+    text-decoration: none;
+  }
+}
+.ship{
+  margin-left: 10px;
+  height: 100px;
+  h5{
+    margin-bottom: 5px;
+  }
 }
