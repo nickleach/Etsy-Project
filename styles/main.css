@@ -53,7 +53,9 @@ h5 {
 .topnav input {
   line-height: normal;
   height: 34px;
-  width: 250px; }
+  width: 250px;
+  font-size: 14px;
+  padding-left: 5px; }
 
 .topnav button {
   font-weight: bold;
@@ -175,7 +177,7 @@ h5 {
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
-  width: 25.76157%; }
+  width: 25%; }
 
 .left:last-child {
   margin-right: 0; }
@@ -184,10 +186,86 @@ h5 {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 74.41059%; }
+  width: 74.41059%;
+  width: 72.41059%; }
 
 .right:last-child {
   margin-right: 0; }
+
+.right ul {
+  margin-top: 60px;
+  text-align: center;
+  margin-left: -45px;
+  width: 750px; }
+
+.right li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  width: 222px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  background-color: #FFF;
+  border: 1px solid #E1E3DF;
+  border-bottom-color: #CBCCC9; }
+
+.right li:last-child {
+  margin-right: 0; }
+
+.right li:nth-child(3n) {
+  margin-right: 0; }
+
+.right li:nth-child(3n+1) {
+  clear: left; }
+
+.main-ul {
+  list-style: none;
+  float: left;
+  position: relative; }
+
+.main-ul img {
+  width: 100%;
+  background-color: #FFFFFF; }
+
+.main-li {
+  position: relative; }
+
+.main-li a {
+  text-decoration: none; }
+
+.row {
+  color: #555;
+  font-size: 12px;
+  margin-bottom: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.row a {
+  font-size: 12px;
+  color: #555; }
+
+.item-seller {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  display: inline-block;
+  color: #b2b2b2;
+  float: left;
+  font-size: 12px; }
+
+.item-seller a {
+  font-size: 12px; }
+
+.item-price {
+  display: inline-block;
+  color: #86C459;
+  float: right;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 0; }
 
 .panel-top {
   background-color: #FFFFFF;
@@ -336,6 +414,8 @@ h5 {
 .ordering-options {
   margin-left: 10px;
   margin-right: 10px;
+  padding-bottom: 16px;
+  margin-bottom: 10px;
   border-bottom: 1px solid #E1E3DF; }
 
 .ordering-options h5 {
@@ -351,6 +431,8 @@ h5 {
 .shop {
   margin-left: 10px;
   margin-right: 10px;
+  padding-bottom: 16px;
+  margin-bottom: 10px;
   border-bottom: 1px solid #E1E3DF; }
 
 .shop h5 {

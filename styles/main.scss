@@ -60,6 +60,9 @@ h5{
     line-height: normal;
     height: 34px;
     width: 250px;
+    font-size: 14px;
+    padding-left: 5px;
+
   }
   button{
     font-weight: bold;
@@ -171,6 +174,7 @@ h5{
 .content{
   background-color: #F5F5F1;
   height: 4000px;
+
 }
 .main{
   width: 980px;
@@ -178,10 +182,81 @@ h5{
 }
 .left{
   @include span-columns(3);
-    width: 25.76157%;
+    width: 25%;
 }
 .right{
 @include span-columns(9);
+  width: 72.41059%;
+  ul{
+    margin-top: 60px;
+    text-align: center;
+    margin-left: -45px;
+    width: 750px;
+  }
+  li{
+  @include span-columns(3);
+  @include omega(3n);
+  width: 222px;
+   font-size: 12px;
+   margin-bottom: 20px;
+  border-radius: 3px;
+  background-color: #FFF;
+  border: 1px solid #E1E3DF;
+  border-bottom-color: #CBCCC9;
+  }
+}
+.main-ul{
+  list-style: none;
+  float: left;
+  position: relative;
+  img{
+    width: 100%;
+    background-color:#FFFFFF;
+  }
+}
+.main-li{
+  // margin-bottom: 6px;
+  position: relative;
+  a{
+    text-decoration: none;
+  }
+
+}
+.row{
+  color: #555;
+  font-size: 12px;
+  margin-bottom: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  a{
+    font-size: 12px;
+    color: #555;
+  }
+}
+.item-seller{
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  display: inline-block;
+  color: #b2b2b2;
+  float: left;
+  font-size: 12px;
+  a{
+    font-size: 12px;
+  }
+
+
+}
+.item-price{
+  display: inline-block;
+  color: #86C459;
+  float: right;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 0;
+
+
 }
 .panel-top{
   background-color: #FFFFFF;
@@ -220,7 +295,7 @@ h5{
   margin-left: 10px;
   margin-right: 10px;
   padding-bottom: 20px;
-@include bottomBorder;
+  @include bottomBorder;
 
   h5{
     margin-bottom: 7px;
@@ -328,6 +403,8 @@ h5{
 .ordering-options{
   margin-left: 10px;
   margin-right: 10px;
+  padding-bottom: 16px;
+  margin-bottom: 10px;
   @include bottomBorder;
   h5{
     margin-bottom: 5px;
@@ -343,6 +420,8 @@ h5{
 .shop{
   margin-left: 10px;
   margin-right: 10px;
+  padding-bottom: 16px;
+  margin-bottom: 10px;
   @include bottomBorder;
   h5{
     margin-bottom: 5px;
