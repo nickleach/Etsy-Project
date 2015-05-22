@@ -177,11 +177,11 @@ h5{
   @include outer-container;
 }
 .left{
-  @include span-columns(4);
+  @include span-columns(3);
     width: 25.76157%;
 }
 .right{
-@include span-columns(8);
+@include span-columns(9);
 }
 .panel-top{
   background-color: #FFFFFF;
