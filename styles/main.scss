@@ -108,6 +108,7 @@ h5{
 .inner{
 }
 .browse{
+  position: relative;
   display: block;
   float: left;
   padding-left: 20px;
@@ -123,10 +124,16 @@ h5{
     text-decoration: none;
     padding-right: 20px;
   }
-  span{
-    width: 100%;
-  }
 }
+.browse:after {
+  content: "▾";
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  color: lightgrey;
+
+}
+
 .browse:hover a{
   border-color:#565656;
 }
@@ -179,6 +186,7 @@ h5{
   width: 10%;
   margin-left: 20px;
 
+
   span{
     display: block;
     border-left: 1px solid #EEEEEE;
@@ -193,11 +201,14 @@ h5{
   }
   a{
     text-decoration: none;
-    color: #949494;
+    color: lightgrey;
     padding-right: 20px;
     font-size: 13px;
 
   }
+}
+.cart:hover a{
+color: darkgrey;
 }
 .content{
   background-color: #F5F5F1;
@@ -252,6 +263,7 @@ h5{
 
 }
 .pic1{
+  position: relative;
   img{
     width: 17px;
     margin-right: 8px;
@@ -279,6 +291,13 @@ h5{
    box-shadow: 1px 1px 1px 1px #565656;
    border-color: black;
 }
+.pic1:after{
+  content: "▾";
+  position: absolute;
+  top: 4px;
+  right: 3px;
+  color: lightgrey;
+}
 .main-li:hover span{
   z-index: 100;
 }
@@ -291,7 +310,6 @@ h5{
   white-space: nowrap;
   a{
     font-size: 12px;
-    color: #555;
   }
 }
 .item-seller{
@@ -299,13 +317,15 @@ h5{
   bottom: 5px;
   left: 5px;
   display: inline-block;
-  color: #b2b2b2;
+ color: #B2B2B2;
   float: left;
   font-size: 12px;
   a{
     font-size: 12px;
   }
-
+}
+.item-title{
+  color: #555555;
 
 }
 .item-price{
@@ -432,6 +452,10 @@ h5{
   top: 27px;
   font-size: 13px;
 }
+.price-inputs button:after{
+  content: "▶";
+  color: #555555;
+}
 .color-filter{
   margin-left: 10px;
   margin-right: 10px;
@@ -496,6 +520,7 @@ h5{
 
 }
 .dropdown{
+  position: relative;
   display: block;
   float: left;
   padding-left: 7px;
@@ -509,6 +534,19 @@ h5{
     display: block;
     text-decoration: none;
   }
+}
+.dropdown:after{
+  content: "▾";
+  position: absolute;
+  top: 8px;
+  right: 7px;
+  color: lightgrey;
+}
+.dropdown:hover {
+  border-color:#565656;
+}
+.dropdown:hover a{
+  text-decoration: none;
 }
 .ship{
   margin-left: 10px;
