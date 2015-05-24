@@ -11,6 +11,16 @@
 @mixin bottomBorder(){
   border-bottom: 1px solid #E1E3DF;
 }
+@mixin hoverPics($x){
+  position: absolute;
+  border-radius: 3px;
+  background-color: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  top: 10px;
+  right: $x;
+  z-index: -1;
+}
 
 body{
   color: #222;
@@ -92,6 +102,9 @@ h5{
   height: 80px;
   padding-top: 20px;
 }
+.searchbar button:hover{
+  background-color: #39B4D8;
+}
 .inner{
 }
 .browse{
@@ -111,6 +124,12 @@ h5{
     padding-right: 20px;
   }
 }
+.browse:hover a{
+  border-color:#565656;
+}
+.searchbar input:hover{
+  box-shadow: inset 0px 0px 0px #565656;
+}
 .register{
   float: left;
   position: relative;
@@ -126,6 +145,9 @@ h5{
     text-decoration: none;
     background: transparent;
   }
+}
+.register:hover a{
+  text-decoration: underline;
 }
 .signin{
   float: left;
@@ -145,6 +167,9 @@ h5{
     text-decoration: none;
     border-radius: 3px;
   }
+}
+.signin:hover a{
+  background-color: lightblue;
 }
 .cart{
   float: right;
@@ -173,7 +198,6 @@ h5{
 }
 .content{
   background-color: #F5F5F1;
-  height: 4000px;
 
 }
 .main{
@@ -209,11 +233,13 @@ h5{
   list-style: none;
   float: left;
   position: relative;
-  img{
-    width: 100%;
-    background-color:#FFFFFF;
-  }
+
 }
+.itemImage{
+  width: 100%;
+  background-color:#FFFFFF;
+}
+
 .main-li{
   // margin-bottom: 6px;
   position: relative;
@@ -221,6 +247,37 @@ h5{
     text-decoration: none;
   }
 
+}
+.pic1{
+  img{
+    width: 17px;
+    margin-right: 8px;
+    margin-top: 3px;
+  }
+  width: 36px;
+ @include hoverPics(5px);
+}
+.pic2{
+ @include hoverPics(40px);
+ width: 12%;
+ margin-right: 5px;
+ padding: 4px;
+ padding-bottom: 0;
+ img{
+  width: 17px;
+ }
+
+}
+.pic2:hover {
+   box-shadow: 1px 1px 1px 1px #565656;
+   border-color: black;
+}
+.pic1:hover {
+   box-shadow: 1px 1px 1px 1px #565656;
+   border-color: black;
+}
+.main-li:hover span{
+  z-index: 100;
 }
 .row{
   color: #555;
